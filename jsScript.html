@@ -1,0 +1,42 @@
+<p id ="demo">BNML</p>
+
+<script>
+
+var addend1 = "2314";
+var addend2 = "1111";
+
+var total ="";
+var a1 = [];
+var a2 = [];
+var t1 = [];
+var i;
+
+document.getElementById("demo").innerHTML = "HELLO";
+
+for (i=0;i < addend1.length;i++){
+  a1.push(addend1.substr(i,1));
+}
+
+for (i=0;i < addend2.length;i++){
+  a2.push(addend2.substr(i,1));
+}
+
+
+\\if (a2.length < a1.length){
+\\var tempA = a1;
+\\a1 = a2;
+\\a2=tempA;
+\\}
+
+for (i=0; i<addend1.length; i++){
+  t1[i] = a1[i] + a2[i];
+}
+
+for (i=0; i<addend1.length; i++)
+{  total = total+a1[i];
+}
+
+
+document.getElementById("demo").innerHTML = total;
+
+</script>
